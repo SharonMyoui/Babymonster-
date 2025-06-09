@@ -1,113 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BabyMonster - Miembros</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #eee;
-    padding: 20px;
-    text-align: center;
-  }
-  h1 {
-    color: #ff69b4;
-    margin-bottom: 40px;
-    font-size: 3rem;
-  }
-  ul.members-list {
-    list-style: none;
-    padding: 0;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  ul.members-list li {
-    margin: 12px 0;
-  }
-  ul.members-list button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.25rem;
-    color: #ff69b4;
-    background: transparent;
-    border: 2px solid #ff69b4;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  ul.members-list button:hover {
-    background-color: #ff69b4;
-    color: #111;
-  }
-  ul.members-list button.active {
-    background-color: #ffa6d2;
-    color: #111;
-    font-weight: bold;
-  }
-  .photo-container {
-    margin-top: 30px;
-  }
-  .photo-container img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 50%;
-    border: 4px solid #ff69b4;
-    display: none;
-    transition: opacity 0.5s ease;
-  }
-  .photo-container img.visible {
-    display: inline-block;
-    opacity: 1;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BabyMonster - Miembros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #ff69b4;
+      margin-bottom: 40px;
+      font-size: 3rem;
+    }
+    ul.members-list {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    ul.members-list li {
+      margin: 12px 0;
+    }
+    ul.members-list button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.25rem;
+      color: #ff69b4;
+      background: transparent;
+      border: 2px solid #ff69b4;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    ul.members-list button:hover {
+      background-color: #ff69b4;
+      color: #111;
+    }
+    ul.members-list button.active {
+      background-color: #ffa6d2;
+      color: #111;
+      font-weight: bold;
+    }
+    .photo-container {
+      margin-top: 30px;
+    }
+    .photo-container img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 20px;
+      border: 4px solid #ff69b4;
+      display: none;
+      transition: opacity 0.5s ease;
+    }
+    .photo-container img.visible {
+      display: inline-block;
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
 
 <h1>BabyMonster - Miembros</h1>
 
 <ul class="members-list" role="list">
-  <li><button type="button" data-photo="" data-img="https://pin.it/6nG2Crd6p">Ahyeon</button></li>
-  <li><button type="button" data-photo="https://pin.it/4lfqQ2VJ4" data-img="https://pin.it/4lfqQ2VJ4">Ruka</button></li>
-  <li><button type="button" data-photo="" data-img="https://via.placeholder.com/300?text=Pharita">Pharita</button></li>
-  <li><button type="button" data-photo="https://pin.it/6HD2iKLJJ" data-img="https://pin.it/6HD2iKLJJ">Asa</button></li>
-  <li><button type="button" data-photo="https://pin.it/1RcBSDpQ9" data-img="https://pin.it/1RcBSDpQ9">Rami</button></li>
-  <li><button type="button" data-photo="" data-img="https://pin.it/6YclSGviv">Chiquita</button></li>
-  <li><button type="button" data-photo="https://pin.it/22AwyXalD" data-img="https://pin.it/22AwyXalD">Rora</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/44/79/10/447910f1ee03dbef6a2e3651062b998a.jpg" data-link="https://pin.it/7KqLovOvk">Ahyeon</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/13/65/00/13650087a57942ad3385b8c52917b6e7.jpg" data-link="https://pin.it/3wDkoxhSl">Ruka</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/14/e1/13/14e113ee3d99d570db38c12813eae4ff.jpg" data-link="https://pin.it/219JwNSoC">Pharita</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/37/8c/b9/378cb9c3b38fce8bde78c34d2eeec7f6.jpg" data-link="https://pin.it/6HD2iKLJJ">Asa</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/8a/51/3f/8a513f7ed2d099509c105bc65c5472e3.jpg" data-link="https://pin.it/1U3WhBTV3">Rami</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/e7/40/3f/e7403fdb6e5464f1ce3d1e85ff3738c2.jpg" data-link="https://pin.it/6YclSGviv">Chiquita</button></li>
+  <li><button data-photo="https://i.pinimg.com/originals/2d/11/0c/2d110c394fce33b38ff4ac4a49d594c2.jpg" data-link="https://pin.it/3OY4EbkkE">Rora</button></li>
 </ul>
 
-<div class="photo-container" aria-live="polite" aria-atomic="true">
-  <a id="memberLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Enlace a la foto original">
-    <img id="memberPhoto" src="" alt="Foto del miembro seleccionado" />
+<div class="photo-container">
+  <a id="link" href="#" target="_blank" rel="noopener noreferrer">
+    <img id="photo" src="" alt="Foto del miembro" />
   </a>
 </div>
 
 <script>
-  const buttons = document.querySelectorAll('.members-list button');
-  const photo = document.getElementById('memberPhoto');
-  const memberLink = document.getElementById('memberLink');
-  let currentActive = null;
+  const buttons = document.querySelectorAll("ul.members-list button");
+  const img = document.getElementById("photo");
+  const link = document.getElementById("link");
+  let activeButton = null;
 
   buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      if (currentActive === button) {
-        // Mismo botón pulsado: ocultar foto
-        button.classList.remove('active');
-        photo.classList.remove('visible');
-        photo.src = '';
-        memberLink.href = '#';
-        photo.alt = 'Foto del miembro seleccionado';
-        currentActive = null;
+    button.addEventListener("click", () => {
+      if (activeButton === button) {
+        // Ocultar si se vuelve a pulsar el mismo
+        button.classList.remove("active");
+        img.src = "";
+        img.classList.remove("visible");
+        link.href = "#";
+        activeButton = null;
       } else {
-        // Cambiar la foto
-        if (currentActive) currentActive.classList.remove('active');
-        button.classList.add('active');
-        photo.src = button.dataset.img;
-        memberLink.href = button.dataset.photo || '#';
-        photo.alt = `Foto de ${button.textContent}`;
-        photo.classList.add('visible');
-        currentActive = button;
+        // Mostrar la nueva imagen
+        buttons.forEach(b => b.classList.remove("active"));
+        button.classList.add("active");
+        img.src = button.dataset.photo;
+        link.href = button.dataset.link;
+        img.classList.add("visible");
+        activeButton = button;
       }
     });
   });
