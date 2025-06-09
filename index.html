@@ -3,197 +3,115 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BabyMonster - Información Completa</title>
+<title>BabyMonster - Miembros</title>
 <style>
-  @keyframes glitter {
-    0%, 100% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 100% 0;
-    }
-  }
   body {
     font-family: Arial, sans-serif;
     background: #111;
     color: #eee;
-    margin: 0;
     padding: 20px;
+    text-align: center;
   }
   h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
-    background-size: 200% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glitter 3s infinite;
-    margin-bottom: 40px;
-  }
-  h2 {
     color: #ff69b4;
-    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
   }
-  .section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #222;
-    border-radius: 12px;
-  }
-  ul {
+  ul.members-list {
     list-style: none;
     padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
   }
-  li {
-    margin-bottom: 12px;
+  ul.members-list li {
+    margin: 12px 0;
   }
-  a {
+  ul.members-list button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.25rem;
     color: #ff69b4;
-    text-decoration: none;
+    background: transparent;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  ul.members-list button:hover {
+    background-color: #ff69b4;
+    color: #111;
+  }
+  ul.members-list button.active {
+    background-color: #ffa6d2;
+    color: #111;
     font-weight: bold;
   }
-  a:hover {
-    text-decoration: underline;
+  .photo-container {
+    margin-top: 30px;
   }
-  .members {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .member {
-    width: 150px;
-  }
-  .member img {
-    width: 150px;
-    height: 150px;
+  .photo-container img {
+    max-width: 300px;
+    width: 100%;
     border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ff69b4;
-    transition: transform 0.3s ease;
-    display: block;
-    margin: 0 auto;
+    border: 4px solid #ff69b4;
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+  .photo-container img.visible {
+    display: inline-block;
+    opacity: 1;
   }
 </style>
 </head>
 <body>
 
-<h1>BabyMonster</h1>
+<h1>BabyMonster - Miembros</h1>
 
-<div class="section members-section">
-  <h2>Miembros</h2>
-  <div class="members">
-    <div class="member">
-      <a href="https://pin.it/7KqLovOvk" target="_blank" rel="noopener noreferrer" title="Ahyeon">
-        <img src="https://via.placeholder.com/150?text=Ahyeon" alt="Ahyeon" />
-      </a>
-    </div>
-    <div class="member">
-      <a href="#" target="_blank" rel="noopener noreferrer" title="Ruka">
-        <img src="https://via.placeholder.com/150?text=Ruka" alt="Ruka" />
-      </a>
-    </div>
-    <div class="member">
-      <a href="https://pin.it/219JwNSoC" target="_blank" rel="noopener noreferrer" title="Pharita">
-        <img src="https://via.placeholder.com/150?text=Pharita" alt="Pharita" />
-      </a>
-    </div>
-    <div class="member">
-      <a href="https://pin.it/6HD2iKLJJ" target="_blank" rel="noopener noreferrer" title="Asa">
-        <img src="https://via.placeholder.com/150?text=Asa" alt="Asa" />
-      </a>
-    </div>
-    <div class="member">
-      <a href="" target="_blank" rel="noopener noreferrer" title="Rami">
-        <img src="https://via.placeholder.com/150?text=Rami" alt="Rami" />
-      </a>
-    </div>
-    <div class="member">
-      <a href="https://pin.it/6YclSGviv" target="_blank" rel="noopener noreferrer" title="Chiquita">
-        <img src="https://via.placeholder.com/150?text=Chiquita" alt="Chiquita" />
-      </a>
-    </div>
-    <div class="member">
-      <a href="https://pin.it/cSuFZu7cP" target="_blank" rel="noopener noreferrer" title="Rora">
-       
-        <img src="https://via.placeholder.com/150?text=Rora" alt="Rora" />
-      </a>
-    </div>
-  </div>
+<ul class="members-list" role="list">
+  <li><button type="button" data-photo="" data-img="https://pin.it/6nG2Crd6p">Ahyeon</button></li>
+  <li><button type="button" data-photo="#" data-img="https://pin.it/4lfqQ2VJ4">Ruka</button></li>
+  <li><button type="button" data-photo="" data-img="https://via.placeholder.com/300?text=Pharita">Pharita</button></li>
+  <li><button type="button" data-photo="" data-img="https://pin.it/6HD2iKLJJ">Asa</button></li>
+  <li><button type="button" data-photo="#" data-img="">Rami</button></li>
+  <li><button type="button" data-photo="" data-img="https://pin.it/6YclSGviv">Chiquita</button></li>
+  <li><button type="button" data-photo="#" data-img="https://pin.it/22AwyXalD">Rora</button></li>
+</ul>
+
+<div class="photo-container" aria-live="polite" aria-atomic="true">
+  <a id="memberLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Enlace a la foto original">
+    <img id="memberPhoto" src="" alt="Foto del miembro seleccionado" />
+  </a>
 </div>
 
-<div class="section">
-  <h2>Animales Representativos</h2>
-  <ul>
-    <li>Ahyeon - Mariposa</li>
-    <li>Ruka - Perezosa</li>
-    <li>Pharita - Ciervo</li>
-    <li>Asa - Conejo</li>
-    <li>Rami - Delfín</li>
-    <li>Chiquita - Gato negro</li>
-    <li>Rora - Oso panda</li>
-  </ul>
-</div>
+<script>
+  const buttons = document.querySelectorAll('.members-list button');
+  const photo = document.getElementById('memberPhoto');
+  const memberLink = document.getElementById('memberLink');
+  let currentActive = null;
 
-<div class="section">
-  <h2>Álbumes</h2>
-  <ul>
-    <li><a href="#" target="_blank" rel="noopener noreferrer">Álbum Completo 1</a></li>
-    <li><a href="#" target="_blank" rel="noopener noreferrer">Álbum Completo 2</a></li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Mini Álbumes</h2>
-  <ul>
-    <li><a href="#" target="_blank" rel="noopener noreferrer">Mini Álbum 1</a></li>
-    <li>"Mini Álbum 2"</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Éxitos</h2>
-  <ul>
-    <li>Éxito 1</li>
-    <li>Éxito 2</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Logros</h2>
-  <ul>
-    <li>Primer grupo femenino en debutar con una alineación exclusivamente de trainees de YG (2023)</li>
-    <li>Rápida acumulación de seguidores en redes sociales tras su debut</li>
-    <li>Reconocimiento por estilo musical fresco y potente en la industria K-pop</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Extras</h2>
-  <ul>
-    <li>Debutaron principalmente como OT6 en "Batter Up" porque Ahyeon estaba con problemas de salud (2023)</li>
-    <li>Debut oficial como OT7 el 1 de abril de 2024 con el álbum <em>babymons7er</em></li>
-    <li>Salida del álbum <em>Drip</em> (fecha no especificada)</li>
-    <li>Rami entró en hiatus (fecha no especificada)</li>
-    <li>Nuevo lanzamiento el 1 de julio de 2024</li>
-    <li>Segundo mini álbum <em>Alvin</em> lanzado el 1 de octubre de 2024</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Solos de Pre-debut</h2>
-  <ul>
-    <li><strong>Pharita:</strong> <a href="#" target="_blank" rel="noopener noreferrer">All of me</a></li>
-    <li><strong>Rora:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Someone you loved</a></li>
-    <li><strong>Asa:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Me, myself &amp; I</a></li>
-    <li><strong>Chiquita:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Traitor</a></li>
-    <li><strong>Ruka:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Astronaut In The Ocean</a> + "멘붕"</li>
-    <li><strong>Haram/Rami:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Pick up your feelings</a></li>
-    <li><strong>Ahyeon:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Dangerously</a></li>
-  </ul>
-</div>
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      if (currentActive === button) {
+        // Mismo botón pulsado: ocultar foto
+        button.classList.remove('active');
+        photo.classList.remove('visible');
+        photo.src = '';
+        memberLink.href = '#';
+        photo.alt = 'Foto del miembro seleccionado';
+        currentActive = null;
+      } else {
+        // Cambiar la foto
+        if (currentActive) currentActive.classList.remove('active');
+        button.classList.add('active');
+        photo.src = button.dataset.img;
+        memberLink.href = button.dataset.photo || '#';
+        photo.alt = `Foto de ${button.textContent}`;
+        photo.classList.add('visible');
+        currentActive = button;
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
