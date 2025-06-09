@@ -6,32 +6,74 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
+      background-color: #fefefe;
       color: #333;
-      line-height: 1.6;
       padding: 20px;
     }
+
     h1, h2 {
       color: #d21f3c;
     }
+
     a {
       color: #1e90ff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    .miembros {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 3px 0;
+      font-size: 14px;
+    }
+
+    ul {
+      margin-bottom: 30px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px;
       background-color: #fff;
     }
+
     th, td {
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
     }
+
     th {
       background-color: #f2f2f2;
     }
@@ -42,60 +84,57 @@
   <h1>BABYMONSTER</h1>
 
   <h2>Miembros</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Nombre real</th>
-        <th>Animal representativo</th>
-        <th>País</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ruka</td>
-        <td>Kawai Ruka</td>
-        <td>Pantera negra</td>
-        <td>Japón</td>
-      </tr>
-      <tr>
-        <td>Pharita</td>
-        <td>Pharita Boonpakdeethaveeyod</td>
-        <td>Cisne</td>
-        <td>Tailandia</td>
-      </tr>
-      <tr>
-        <td>Asa</td>
-        <td>Enami Asa</td>
-        <td>Gato esfinge</td>
-        <td>Japón</td>
-      </tr>
-      <tr>
-        <td>Ahyeon</td>
-        <td>Jung Ahyeon</td>
-        <td>Lobo</td>
-        <td>Corea del Sur</td>
-      </tr>
-      <tr>
-        <td>Rami</td>
-        <td>Shin Haram</td>
-        <td>Liebre</td>
-        <td>Corea del Sur</td>
-      </tr>
-      <tr>
-        <td>Rora</td>
-        <td>Lee Dain</td>
-        <td>Zorro ártico</td>
-        <td>Corea del Sur</td>
-      </tr>
-      <tr>
-        <td>Chiquita</td>
-        <td>Riracha Phondechaphiphat</td>
-        <td>Tigre blanco</td>
-        <td>Tailandia</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="miembros">
+    <div class="card">
+      <img src="https://pin.it/2t4d4VkNo" alt="Ruka">
+      <h3>Ruka</h3>
+      <p><strong>Nombre real:</strong> Kawai Ruka</p>
+      <p><strong>Animal:</strong> Pantera negra</p>
+      <p><strong>País:</strong> Japón</p>
+    </div>
+    <div class="card">
+      <img src="https://pin.it/2H4B9R8Vx" alt="Pharita">
+      <h3>Pharita</h3>
+      <p><strong>Nombre real:</strong> Pharita Boonpakdeethaveeyod</p>
+      <p><strong>Animal:</strong> Cisne</p>
+      <p><strong>País:</strong> Tailandia</p>
+    </div>
+    <div class="card">
+      <img src="https://pin.it/5M2HrV4tY" alt="Asa">
+      <h3>Asa</h3>
+      <p><strong>Nombre real:</strong> Enami Asa</p>
+      <p><strong>Animal:</strong> Gato esfinge</p>
+      <p><strong>País:</strong> Japón</p>
+    </div>
+    <div class="card">
+      <img src="https://pin.it/3hyFt2zwH" alt="Ahyeon">
+      <h3>Ahyeon</h3>
+      <p><strong>Nombre real:</strong> Jung Ahyeon</p>
+      <p><strong>Animal:</strong> Lobo</p>
+      <p><strong>País:</strong> Corea del Sur</p>
+    </div>
+    <div class="card">
+      <img src="https://pin.it/34b3hhAYU" alt="Rami">
+      <h3>Rami</h3>
+      <p><strong>Nombre real:</strong> Shin Haram</p>
+      <p><strong>Animal:</strong> Liebre</p>
+      <p><strong>País:</strong> Corea del Sur</p>
+    </div>
+    <div class="card">
+      <img src="https://pin.it/j1rYxJhrZ" alt="Rora">
+      <h3>Rora</h3>
+      <p><strong>Nombre real:</strong> Lee Dain</p>
+      <p><strong>Animal:</strong> Zorro ártico</p>
+      <p><strong>País:</strong> Corea del Sur</p>
+    </div>
+    <div class="card">
+      <img src="https://pin.it/3fy11bqgZ" alt="Chiquita">
+      <h3>Chiquita</h3>
+      <p><strong>Nombre real:</strong> Riracha Phondechaphiphat</p>
+      <p><strong>Animal:</strong> Tigre blanco</p>
+      <p><strong>País:</strong> Tailandia</p>
+    </div>
+  </div>
 
   <h2>Álbumes</h2>
   <ul>
