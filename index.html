@@ -1,178 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>BABYMONSTER</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-      padding: 20px;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BabyMonster - Información Completa</title>
+<style>
+  @keyframes glitter {
+    0%, 100% {
+      background-position: 0 0;
     }
-
-    h1, h2 {
-      color: #d21f3c;
+    50% {
+      background-position: 100% 0;
     }
-
-    a {
-      color: #1e90ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .miembros {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      margin: 10px 0 5px;
-    }
-
-    .card p {
-      margin: 3px 0;
-      font-size: 14px;
-    }
-
-    ul {
-      margin-bottom: 30px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-      background-color: #fff;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 3s infinite;
+    margin-bottom: 40px;
+  }
+  h2 {
+    color: #ff69b4;
+    text-align: center;
+  }
+  .section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 12px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 12px;
+  }
+  a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .members {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .member {
+    text-align: center;
+    width: 150px;
+  }
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff69b4;
+    transition: transform 0.3s ease;
+  }
+  .member img:hover {
+    transform: scale(1.1);
+  }
+</style>
 </head>
 <body>
 
-  <h1>BABYMONSTER</h1>
+<h1>BabyMonster</h1>
 
+<div class="section members-section">
   <h2>Miembros</h2>
-  <div class="miembros">
-    <div class="card">
-      <img src="https://pin.it/2t4d4VkNo" alt="Ruka">
-      <h3>Ruka</h3>
-      <p><strong>Nombre real:</strong> Kawai Ruka</p>
-      <p><strong>Animal:</strong> Pantera negra</p>
-      <p><strong>País:</strong> Japón</p>
+  <div class="members">
+    <div class="member">
+      <a href="https://pin.it/7KqLovOvk" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Ahyeon" alt="Ahyeon" />
+        <div>Ahyeon</div>
+      </a>
     </div>
-    <div class="card">
-      <img src="https://pin.it/2H4B9R8Vx" alt="Pharita">
-      <h3>Pharita</h3>
-      <p><strong>Nombre real:</strong> Pharita Boonpakdeethaveeyod</p>
-      <p><strong>Animal:</strong> Cisne</p>
-      <p><strong>País:</strong> Tailandia</p>
+    <div class="member">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Ruka" alt="Ruka" />
+        <div>Ruka</div>
+      </a>
     </div>
-    <div class="card">
-      <img src="https://pin.it/5M2HrV4tY" alt="Asa">
-      <h3>Asa</h3>
-      <p><strong>Nombre real:</strong> Enami Asa</p>
-      <p><strong>Animal:</strong> Gato esfinge</p>
-      <p><strong>País:</strong> Japón</p>
+    <div class="member">
+      <a href="https://pin.it/219JwNSoC" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Pharita" alt="Pharita" />
+        <div>Pharita</div>
+      </a>
     </div>
-    <div class="card">
-      <img src="https://pin.it/3hyFt2zwH" alt="Ahyeon">
-      <h3>Ahyeon</h3>
-      <p><strong>Nombre real:</strong> Jung Ahyeon</p>
-      <p><strong>Animal:</strong> Lobo</p>
-      <p><strong>País:</strong> Corea del Sur</p>
+    <div class="member">
+      <a href="https://pin.it/6HD2iKLJJ" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Asa" alt="Asa" />
+        <div>Asa</div>
+      </a>
     </div>
-    <div class="card">
-      <img src="https://pin.it/34b3hhAYU" alt="Rami">
-      <h3>Rami</h3>
-      <p><strong>Nombre real:</strong> Shin Haram</p>
-      <p><strong>Animal:</strong> Liebre</p>
-      <p><strong>País:</strong> Corea del Sur</p>
+    <div class="member">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Rami" alt="Rami" />
+        <div>Rami</div>
+      </a>
     </div>
-    <div class="card">
-      <img src="https://pin.it/j1rYxJhrZ" alt="Rora">
-      <h3>Rora</h3>
-      <p><strong>Nombre real:</strong> Lee Dain</p>
-      <p><strong>Animal:</strong> Zorro ártico</p>
-      <p><strong>País:</strong> Corea del Sur</p>
+    <div class="member">
+      <a href="https://pin.it/6YclSGviv" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Chiquita" alt="Chiquita" />
+        <div>Chiquita</div>
+      </a>
     </div>
-    <div class="card">
-      <img src="https://pin.it/3fy11bqgZ" alt="Chiquita">
-      <h3>Chiquita</h3>
-      <p><strong>Nombre real:</strong> Riracha Phondechaphiphat</p>
-      <p><strong>Animal:</strong> Tigre blanco</p>
-      <p><strong>País:</strong> Tailandia</p>
+    <div class="member">
+      <a href="https://pin.it/189c9jBI5" target="_blank" rel="noopener noreferrer">
+        <img src="https://via.placeholder.com/150?text=Rora" alt="Rora" />
+        <div>Rora</div>
+      </a>
     </div>
   </div>
+</div>
 
+<div class="section">
+  <h2>Animales Representativos</h2>
+  <ul>
+    <li>Ahyeon - Mariposa</li>
+    <li>Ruka - Perezosa</li>
+    <li>Pharita - Ciervo</li>
+    <li>Asa - Conejo</li>
+    <li>Rami - Delfín</li>
+    <li>Chiquita - Gato negro</li>
+    <li>Rora - Oso panda</li>
+  </ul>
+</div>
+
+<div class="section">
   <h2>Álbumes</h2>
   <ul>
-    <li>
-      <strong>[BABYMONS7ER (2024)]</strong> — 
-      <a href="https://open.spotify.com/album/fake-link-album" target="_blank">Escuchar Álbum Completo</a>
-    </li>
+    <li><a href="#" target="_blank" rel="noopener noreferrer">Álbum Completo 1</a></li>
+    <li><a href="#" target="_blank" rel="noopener noreferrer">Álbum Completo 2</a></li>
   </ul>
+</div>
 
-  <h2>Mini Álbum</h2>
+<div class="section">
+  <h2>Mini Álbumes</h2>
   <ul>
-    <li>
-      <strong>[BABYMONSTER - Debut Mini Album]</strong> — 
-      <a href=https://open.spotify.com/album/fake-link-minialbum target="_blank">Escuchar Mini Álbum</a>
-    </li>
+    <li><a href="#" target="_blank" rel="noopener noreferrer">Mini Álbum 1</a></li>
+    <li>"Mini Álbum 2"</li>
   </ul>
+</div>
 
+<div class="section">
   <h2>Éxitos</h2>
   <ul>
-    <li>Batter Up</li>
-    <li>Stuck in the Middle</li>
-    <li>Sheesh</li>
-    <li>Like That</li>
+    <li>Éxito 1</li>
+    <li>Éxito 2</li>
   </ul>
+</div>
 
+<div class="section">
   <h2>Logros</h2>
   <ul>
-    <li>Debut más visto de un grupo femenino en YouTube con "Batter Up"</li>
-    <li>Ganadoras de Rookie del Año en varios premios asiáticos</li>
-    <li>Primer grupo de YG con integrantes de Tailandia y Japón simultáneamente</li>
+    <li>Logro 1</li>
+    <li>Logro 2</li>
   </ul>
+</div>
 
+<div class="section">
   <h2>Extras</h2>
   <ul>
-    <li>Documental "Last Evaluation" mostró el proceso de selección</li>
-    <li>Fandom no oficial: “Monsterz”</li>
-    <li>Son conocidas por su talento vocal, rap y baile a nivel profesional desde predebut</li>
+    <li>Dato extra 1</li>
+    <li>Dato extra 2</li>
   </ul>
+</div>
+
+<div class="section">
+  <h2>Solos de Pre-debut</h2>
+  <ul>
+    <li><strong>Pharita:</strong> <a href="#" target="_blank" rel="noopener noreferrer">All of me</a></li>
+    <li><strong>Rora:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Someone you loved</a></li>
+    <li><strong>Asa:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Me, myself &amp; I</a></li>
+    <li><strong>Chiquita:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Traitor</a></li>
+    <li><strong>Ruka:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Astronaut In The Ocean</a> + "멘붕"</li>
+    <li><strong>Haram/Rami:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Pick up your feelings</a></li>
+    <li><strong>Ahyeon:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Dangerously</a></li>
+  </ul>
+</div>
 
 </body>
 </html>
