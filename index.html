@@ -19,41 +19,33 @@
     color: #eee;
     margin: 0;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra todo el contenido */
   }
   h1 {
     font-size: 4rem;
     font-weight: bold;
+    text-align: center;
     background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: glitter 3s infinite;
     margin-bottom: 40px;
-    text-align: center;
   }
   h2 {
     color: #ff69b4;
     text-align: center;
+    margin-bottom: 20px;
   }
   .section {
     max-width: 900px;
-    width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 20px;
     background: #222;
     border-radius: 12px;
-    box-sizing: border-box;
   }
   ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
   }
   li {
     margin-bottom: 12px;
@@ -62,16 +54,31 @@
     color: #ff69b4;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 8px 15px;
-    border: 2px solid #ff69b4;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease;
   }
   a:hover {
-    background-color: #ff69b4;
-    color: #111;
+    text-decoration: underline;
+  }
+  /* Miembros nombres estilo */
+  .members-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .members-list li a {
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .members-list li a:hover {
+    color: #ff4aa1;
+    text-decoration: underline;
   }
 </style>
 </head>
@@ -79,36 +86,21 @@
 
 <h1>BabyMonster</h1>
 
-<div class="section members-section">
+<div class="section">
   <h2>Miembros</h2>
-  <ul>
+  <ul class="members-list">
     <li><a href="https://pin.it/7KqLovOvk" target="_blank" rel="noopener noreferrer">Ahyeon</a></li>
-    <li><a href="https://pin.it/KS97JUkVI" target="_blank" rel="noopener noreferrer">Ruka</a></li>
-    <li><a href="https://pin.it/219JwNSoC" target="_blank" rel="noopener noreferrer">Pharita</a></li>
+    <li><a href="https://pin.it/KS97JUkVI" target="_blank" rel="noopener noreferrer">Pharita</a></li>
+    <li><a href="https://pin.it/7mA3tpRjw" target="_blank" rel="noopener noreferrer">Ruka</a></li>
     <li><a href="https://pin.it/6HD2iKLJJ" target="_blank" rel="noopener noreferrer">Asa</a></li>
-    <li><a href="" target="_blank" rel="noopener noreferrer">Rami</a></li>
+    <li><a href="https://pin.it/4W1cRQjZp" target="_blank" rel="noopener noreferrer">Rami</a></li>
     <li><a href="https://pin.it/H3iPLpxZG" target="_blank" rel="noopener noreferrer">Chiquita</a></li>
     <li><a href="https://pin.it/5sdMvEtXC" target="_blank" rel="noopener noreferrer">Rora</a></li>
   </ul>
 </div>
 
-<!-- Resto del contenido igual que antes -->
-
 <div class="section">
-  <h2>Animales Representativos</h2>
-  <ul>
-    <li>Ahyeon - Mariposa</li>
-    <li>Ruka - Perezosa</li>
-    <li>Pharita - Ciervo</li>
-    <li>Asa - Conejo</li>
-    <li>Rami - Delfín</li>
-    <li>Chiquita - Gato negro</li>
-    <li>Rora - Oso panda</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Álbumes</h2>
+  <h2>Álbum</h2>
   <ul>
     <li><a href="https://youtu.be/h2vOMeKN-fQ" target="_blank" rel="noopener noreferrer">Drip (1 de noviembre de 2024)</a></li>
     <li>Segundo álbum completo (fecha y título por confirmar)</li>
@@ -116,7 +108,7 @@
 </div>
 
 <div class="section">
-  <h2>Mini Álbumes</h2>
+  <h2>Mini Álbum</h2>
   <ul>
     <li><a href="https://youtu.be/2oIQH3Z7PnY" target="_blank" rel="noopener noreferrer">babymons7er (Primer mini álbum)</a></li>
     <li>Segundo mini álbum (nombre y fecha por confirmar)</li>
@@ -126,8 +118,8 @@
 <div class="section">
   <h2>Éxitos</h2>
   <ul>
-    <li>Shining Star</li>
-    <li>Dream High</li>
+    <li>Batter Up</li>
+    <li>Drip</li>
   </ul>
 </div>
 
@@ -143,25 +135,26 @@
 <div class="section">
   <h2>Extras</h2>
   <ul>
-    <li>Debutaron principalmente como OT6 en "Batter Up" porque Ahyeon estaba con problemas de salud (2023)</li>
-    <li>Debut oficial como OT7 el 1 de abril de 2024 con el álbum <em>babymons7er</em></li>
-    <li>Salida del álbum <em>Drip</em> el 1 de noviembre de 2024</li>
+    <li>Debutaron principalmente como OT6 en "Batter Up" (2023) porque Ahyeon estaba con problemas de salud</li>
+    <li>Debut oficial como OT7 el 1 de abril de 2024 con el mini álbum <em>babymons7er</em> (incluye "Batter Up")</li>
+    <li>Salida del primer álbum completo <em>Drip</em> el 1 de noviembre de 2024</li>
     <li>Rami entró en hiatus (fecha no especificada)</li>
     <li>Nuevo lanzamiento el 1 de julio de 2024</li>
-    <li>Segundo mini álbum lanzado (nombre y fecha por confirmar)</li>
+    <li>Segundo mini álbum <em>Alvin</em> lanzado el 1 de octubre de 2024 (nombre por confirmar)</li>
+    <li>El fandom oficial de BabyMonster se llama <strong>Monstiez</strong></li>
   </ul>
 </div>
 
 <div class="section">
   <h2>Solos de Pre-debut</h2>
   <ul>
-    <li><strong>Pharita:</strong> All of me</li>
-    <li><strong>Rora:</strong> Someone you loved</li>
-    <li><strong>Asa:</strong> Me, myself &amp; I</li>
-    <li><strong>Chiquita:</strong> Traitor</li>
-    <li><strong>Ruka:</strong> Astronaut In The Ocean + 멘붕</li>
-    <li><strong>Haram/Rami:</strong> Pick up your feelings</li>
-    <li><strong>Ahyeon:</strong> Dangerously</li>
+    <li><strong>Pharita:</strong> <a href="#" target="_blank" rel="noopener noreferrer">All of me</a></li>
+    <li><strong>Rora:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Someone you loved</a></li>
+    <li><strong>Asa:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Me, myself &amp; I</a></li>
+    <li><strong>Chiquita:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Traitor</a></li>
+    <li><strong>Ruka:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Astronaut In The Ocean</a> + "멘붕"</li>
+    <li><strong>Haram/Rami:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Pick up your feelings</a></li>
+    <li><strong>Ahyeon:</strong> <a href="#" target="_blank" rel="noopener noreferrer">Dangerously</a></li>
   </ul>
 </div>
 
